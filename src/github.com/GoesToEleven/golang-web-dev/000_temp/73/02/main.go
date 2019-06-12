@@ -4,7 +4,7 @@ import "fmt"
 
 // AGGREGATE or COMPOSITE
 func main() {
-	xi := []int{4,5,6,7,42}
+	xi := []int{4, 5, 6, 7, 42}
 
 	fmt.Println(xi)
 

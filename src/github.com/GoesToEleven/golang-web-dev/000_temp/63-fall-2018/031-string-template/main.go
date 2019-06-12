@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"log"
-	"strings"
 	"io"
+	"log"
+	"os"
+	"strings"
 )
 
 func main() {

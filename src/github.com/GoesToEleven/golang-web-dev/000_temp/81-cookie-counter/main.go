@@ -1,10 +1,10 @@
 package main
 
 import (
-	"net/http"
-	"html/template"
-	"strconv"
 	"fmt"
+	"html/template"
+	"net/http"
+	"strconv"
 )
 
 var tpl *template.Template
@@ -30,7 +30,6 @@ func foo(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "index.gohtml", c.Value)
 }
 
-
 func bar(w http.ResponseWriter, r *http.Request) {
 	c, err := cookieCounter(r)
 	if err != nil {
@@ -49,9 +48,9 @@ func cookieCounter(r *http.Request) (*http.Cookie, error) {
 	c, err := r.Cookie("wackadoodle")
 	if err != nil {
 		c = &http.Cookie{
-			Name: "wackadoodle",
+			Name:  "wackadoodle",
 			Value: "0",
-			Path: "/",
+			Path:  "/",
 		}
 	}
 

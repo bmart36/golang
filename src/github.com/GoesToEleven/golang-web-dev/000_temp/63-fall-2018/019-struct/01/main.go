@@ -3,6 +3,7 @@ package _1
 import "fmt"
 
 type hotdog int
+
 var x hotdog
 
 func main() {

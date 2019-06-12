@@ -1,13 +1,12 @@
 package main
 
 import (
-	"net/http"
-	"log"
 	"fmt"
 	"html"
 	"io"
+	"log"
+	"net/http"
 )
-
 
 type hotdog int
 
@@ -27,7 +26,6 @@ func main() {
 		fmt.Fprintf(w, "Hello, %q", html.EscapeString(r.URL.Path))
 	})
 
-
 	log.Fatal(http.ListenAndServe(":8080", nil))
 
 }
@@ -35,7 +33,6 @@ func main() {
 func fooHandler(w http.ResponseWriter, r *http.Request) {
 	io.WriteString(w, "hello from foo")
 }
-
 
 /*
 

@@ -65,11 +65,9 @@ func con2(w http.ResponseWriter, r *http.Request) {
 	tpl2.ExecuteTemplate(w, "contact.gohtml", nil)
 }
 
-
 func con3(w http.ResponseWriter, r *http.Request) {
 	tpl3.ExecuteTemplate(w, "contact.gohtml", nil)
 }
-
 
 func con4(w http.ResponseWriter, r *http.Request) {
 	tpl4.ExecuteTemplate(w, "pale", nil)

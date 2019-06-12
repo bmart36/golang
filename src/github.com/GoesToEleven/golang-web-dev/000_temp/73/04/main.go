@@ -4,7 +4,7 @@ import "fmt"
 
 type person struct {
 	first string
-	age int
+	age   int
 }
 
 type secretAgent struct {
@@ -15,13 +15,13 @@ type secretAgent struct {
 func main() {
 	p := person{
 		first: "Miss Moneypenny",
-		age: 27,
+		age:   27,
 	}
 
-	sa := secretAgent {
-		person: person {
+	sa := secretAgent{
+		person: person{
 			first: "James",
-			age: 32,
+			age:   32,
 		},
 		ltk: true,
 	}

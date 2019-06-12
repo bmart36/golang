@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"html/template"
+	"net/http"
 )
 
 var tpl *template.Template
@@ -23,10 +23,10 @@ func home(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "default.gohtml", nil)
 }
 
-func about (w http.ResponseWriter, r *http.Request) {
+func about(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "about.gohtml", nil)
 }
 
-func contact (w http.ResponseWriter, r * http.Request) {
+func contact(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "contact.gohtml", nil)
 }

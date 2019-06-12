@@ -1,16 +1,16 @@
 package main
 
 import (
-	"html/template"
-	"net/http"
-	_ "github.com/lib/pq"
 	"database/sql"
-	"log"
 	"fmt"
+	_ "github.com/lib/pq"
+	"html/template"
+	"log"
+	"net/http"
 )
 
 type customer struct {
-	ID int
+	ID    int
 	First string
 }
 

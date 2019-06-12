@@ -7,10 +7,10 @@ import (
 )
 
 type Book struct {
-	ISBN string
-	Title string
+	ISBN   string
+	Title  string
 	Author string
-	Price float32
+	Price  float32
 }
 
 func main() {
@@ -38,7 +38,7 @@ func main() {
 		xb = append(xb, b)
 
 		if err = rs.Err(); err != nil {
-				panic(err)
+			panic(err)
 		}
 	}
 

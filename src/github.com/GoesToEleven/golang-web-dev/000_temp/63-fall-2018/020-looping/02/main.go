@@ -14,10 +14,10 @@ func main() {
 	}
 
 	for _, val := range xi {
-		fmt.Println("-",val)
+		fmt.Println("-", val)
 	}
 
-	m := map[string]int{"James":32, "Jenny":27,}
+	m := map[string]int{"James": 32, "Jenny": 27}
 
 	for k, v := range m {
 		fmt.Println(k, v)

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"text/template"
 	"os"
+	"text/template"
 )
 
 var tpl *template.Template
@@ -13,16 +13,16 @@ func init() {
 
 type person struct {
 	First string
-	Last string
-	Age int
+	Last  string
+	Age   int
 }
 
 func main() {
 
 	p1 := person{
 		First: "James",
-		Last: "Bond",
-		Age: 32,
+		Last:  "Bond",
+		Age:   32,
 	}
 
 	err := tpl.ExecuteTemplate(os.Stdout, "one.gohtml", p1)
@@ -32,8 +32,8 @@ func main() {
 
 	p2 := person{
 		First: "Jenny",
-		Last: "Moneypenny",
-		Age: 27,
+		Last:  "Moneypenny",
+		Age:   27,
 	}
 
 	xp := []person{p1, p2}

@@ -2,8 +2,8 @@ package main
 
 import (
 	"html/template"
-	"os"
 	"log"
+	"os"
 )
 
 var tpl *template.Template
@@ -44,6 +44,5 @@ func main() {
 	if err != nil {
 		log.Fatal("there was an error", err)
 	}
-
 
 }

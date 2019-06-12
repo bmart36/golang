@@ -13,7 +13,6 @@ func main() {
 	fmt.Println("a after bar", a)
 }
 
-
 func foo(b int) {
 	b = 43
 	fmt.Println("b", b)

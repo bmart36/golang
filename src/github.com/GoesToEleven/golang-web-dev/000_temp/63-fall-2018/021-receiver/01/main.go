@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type person struct {
-	first string
-	last  string
+	first  string
+	last   string
 	saying string
 }
 
@@ -16,14 +16,14 @@ func (p person) speak() {
 
 func main() {
 	p1 := person{
-		first: "James",
-		last:  "Bond",
+		first:  "James",
+		last:   "Bond",
 		saying: "Shaken, not stirred.",
 	}
 
 	p2 := person{
-		first: "Jenny",
-		last:  "Moneypenny",
+		first:  "Jenny",
+		last:   "Moneypenny",
 		saying: "Helllllllo, James.",
 	}
 

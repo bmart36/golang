@@ -7,9 +7,9 @@ func main() {
 
 	// anonymous func
 
-	func(x int){
+	func(x int) {
 		fmt.Println(x)
 	}(4)
 }
 
-func foo() {fmt.Println("this is foo")}
+func foo() { fmt.Println("this is foo") }

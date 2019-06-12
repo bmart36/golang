@@ -8,8 +8,8 @@ var d = 43
 const z = 142
 
 type person struct {
-	first string
-	age int
+	first  string
+	age    int
 	saying string
 }
 
@@ -53,7 +53,7 @@ func main() {
 
 	// slice AGGREGATE or COMPOSITE data structure
 
-	ee := []int{2,3,4,7,9,}
+	ee := []int{2, 3, 4, 7, 9}
 	fmt.Println(ee)
 
 	// it was going SEQUENCE
@@ -67,9 +67,8 @@ func main() {
 		}
 	}
 
-
 	// map AGGREGATE or COMPOSITE data structure
-	f := map[string]int{"James":32, "Jenny":27,}
+	f := map[string]int{"James": 32, "Jenny": 27}
 	fmt.Println(f)
 
 	for k, v := range f {
@@ -78,14 +77,14 @@ func main() {
 
 	// struct AGGREGATE or COMPOSITE data structure
 	p1 := person{
-		first: "James",
-		age: 32,
+		first:  "James",
+		age:    32,
 		saying: "shaken, not stirred",
 	}
 
-	p2 := person {
-		first: "Jenny",
-		age: 27,
+	p2 := person{
+		first:  "Jenny",
+		age:    27,
 		saying: "nobody does it better",
 	}
 
@@ -102,8 +101,8 @@ func main() {
 
 	sa1 := secretagent{
 		person: person{
-			first: "Jack",
-			age:   29,
+			first:  "Jack",
+			age:    29,
 			saying: "Blahb blahblabhalbhablhab",
 		},
 		ltk: true,

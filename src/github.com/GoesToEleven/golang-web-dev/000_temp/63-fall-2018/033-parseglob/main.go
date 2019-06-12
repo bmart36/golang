@@ -1,8 +1,8 @@
 package main
 
 import (
-	"text/template"
 	"os"
+	"text/template"
 )
 
 var tpl *template.Template

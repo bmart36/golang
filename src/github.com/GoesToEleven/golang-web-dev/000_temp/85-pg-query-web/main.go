@@ -31,10 +31,10 @@ func init() {
 }
 
 type Book struct {
-	Isbn string
-	Title string
+	Isbn   string
+	Title  string
 	Author string
-	Price float32
+	Price  float32
 }
 
 func main() {
@@ -57,8 +57,6 @@ func foo(w http.ResponseWriter, r *http.Request) {
 	}
 	tpl.ExecuteTemplate(w, "books.gohtml", xb)
 }
-
-
 
 //rs, err := db.Query("select * from books;")
 //if err != nil {

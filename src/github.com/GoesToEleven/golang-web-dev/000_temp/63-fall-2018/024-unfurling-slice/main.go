@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	xi := []int{1,2,4,5,7,8,9,}
+	xi := []int{1, 2, 4, 5, 7, 8, 9}
 	foo(xi...)
 }
 

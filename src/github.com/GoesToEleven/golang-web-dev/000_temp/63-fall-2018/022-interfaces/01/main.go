@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 type person struct {
-	first string
-	last  string
+	first  string
+	last   string
 	saying string
 }
 
@@ -30,21 +30,21 @@ func foo(h human) {
 
 func main() {
 	p1 := person{
-		first: "James",
-		last:  "Bond",
+		first:  "James",
+		last:   "Bond",
 		saying: "Shaken, not stirred.",
 	}
 
 	p2 := person{
-		first: "Jenny",
-		last:  "Moneypenny",
+		first:  "Jenny",
+		last:   "Moneypenny",
 		saying: "Helllllllo, James.",
 	}
 
 	sa1 := secretAgent{
 		person: person{
-			first: "Ian",
-			last: "Fleming",
+			first:  "Ian",
+			last:   "Fleming",
 			saying: "The books were based on real stories",
 		},
 		ltk: true,

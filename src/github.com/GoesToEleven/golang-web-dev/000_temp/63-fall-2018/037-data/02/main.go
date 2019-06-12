@@ -2,8 +2,8 @@ package main
 
 import (
 	"html/template"
-	"os"
 	"log"
+	"os"
 )
 
 var tpl *template.Template
@@ -30,7 +30,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-
 
 	t := `    here is a raw 
 

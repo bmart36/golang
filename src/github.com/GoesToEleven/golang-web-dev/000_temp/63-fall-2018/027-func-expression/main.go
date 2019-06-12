@@ -7,7 +7,7 @@ func main() {
 	fmt.Println(a)
 
 	d := 14
-	b := func(z string){
+	b := func(z string) {
 		fmt.Println(z)
 	}
 
@@ -18,7 +18,7 @@ func main() {
 	b("jenny")
 	x := foo("cat")
 	y := foo("bird")
-	fmt.Println(x,y)
+	fmt.Println(x, y)
 	fmt.Println(d)
 }
 

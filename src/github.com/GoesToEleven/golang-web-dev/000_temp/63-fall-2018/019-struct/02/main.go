@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 type person struct {
-	first string
+	first   string
 	license int
 	sayings []string
 }
 
 func main() {
 	p1 := person{
-		first: "James",
+		first:   "James",
 		license: 007,
-		sayings: []string{"Shaken, not stirred", "Bond, James Bond",},
+		sayings: []string{"Shaken, not stirred", "Bond, James Bond"},
 	}
 	fmt.Println(p1)
 }

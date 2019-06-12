@@ -1,10 +1,10 @@
 package main
 
 import (
-	"text/template"
+	"fmt"
 	"log"
 	"os"
-	"fmt"
+	"text/template"
 )
 
 func main() {

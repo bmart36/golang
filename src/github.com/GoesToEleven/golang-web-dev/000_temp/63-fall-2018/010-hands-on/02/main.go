@@ -6,7 +6,6 @@ func main() {
 	foo()
 }
 
-
 // func receiver identifier(parameters) return(s) {code}
 
 func foo() {

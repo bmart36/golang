@@ -11,7 +11,6 @@ func main() {
 	foo("Cole", 19)
 }
 
-
 // func
 // modularize our code and DRY (don't repeat yourself)
 // funcs are defined with parameters

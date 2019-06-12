@@ -5,9 +5,9 @@ import "fmt"
 func main() {
 	x := foo()
 	y := foo()
-	fmt.Printf("%T\t %T\n", x,y)
+	fmt.Printf("%T\t %T\n", x, y)
 
-	func(z string){
+	func(z string) {
 		fmt.Println(z)
 	}("james")
 
@@ -17,7 +17,7 @@ func main() {
 }
 
 func foo() func(string) {
-	return func(z string){
+	return func(z string) {
 		fmt.Println(z)
 	}
 }

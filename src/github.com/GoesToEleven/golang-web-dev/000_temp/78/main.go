@@ -1,11 +1,11 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
 	"html/template"
-	"os"
 	"io"
+	"net/http"
+	"os"
 )
 
 var tpl *template.Template
@@ -13,7 +13,6 @@ var tpl *template.Template
 func init() {
 	tpl = template.Must(template.ParseGlob("templates/*.gohtml"))
 }
-
 
 func main() {
 	http.HandleFunc("/", foo)
@@ -37,7 +36,7 @@ func foo(w http.ResponseWriter, r *http.Request) {
 
 		fn = h.Filename
 
-		df, err := os.Create("./assets/"+fn)
+		df, err := os.Create("./assets/" + fn)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
@@ -53,5 +52,5 @@ func foo(w http.ResponseWriter, r *http.Request) {
 
 	// w.Header().Set("Content-Type", "text/html; charset=utf-8")
 
-	 tpl.ExecuteTemplate(w, "index.gohtml", fn)
+	tpl.ExecuteTemplate(w, "index.gohtml", fn)
 }

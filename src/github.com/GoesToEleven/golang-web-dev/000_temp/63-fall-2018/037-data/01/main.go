@@ -2,8 +2,8 @@ package main
 
 import (
 	"html/template"
-	"os"
 	"log"
+	"os"
 )
 
 var tpl *template.Template
@@ -30,8 +30,7 @@ func main() {
 		panic(err)
 	}
 
-
-	xi := []int{7,8,9,125,345,}
+	xi := []int{7, 8, 9, 125, 345}
 	err = tpl.ExecuteTemplate(f2, "about.gohtml", xi)
 	if err != nil {
 		panic(err)

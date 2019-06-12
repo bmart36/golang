@@ -1,16 +1,16 @@
 package main
 
 import (
-	"html/template"
-	"net/http"
-	_ "github.com/lib/pq"
 	"database/sql"
-	"log"
 	"fmt"
+	_ "github.com/lib/pq"
+	"html/template"
+	"log"
+	"net/http"
 )
 
 type customer struct {
-	ID int
+	ID    int
 	First string
 }
 
@@ -93,7 +93,6 @@ func create(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/", http.StatusFound)
 }
 
-
 // UPDATE
 func up(w http.ResponseWriter, r *http.Request) {
 
@@ -117,7 +116,6 @@ func up(w http.ResponseWriter, r *http.Request) {
 
 	tpl.ExecuteTemplate(w, "update.gohtml", c)
 }
-
 
 func ptoo(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
@@ -146,7 +144,6 @@ func ptoo(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, "/", http.StatusFound)
 }
 
-
 // DELETE
 func del(w http.ResponseWriter, r *http.Request) {
 
@@ -156,7 +153,6 @@ func del(w http.ResponseWriter, r *http.Request) {
 	}
 
 	customerid := r.FormValue("recordid")
-
 
 	result, err := db.Exec("DELETE FROM customers WHERE cid = $1;", customerid)
 	if err != nil {

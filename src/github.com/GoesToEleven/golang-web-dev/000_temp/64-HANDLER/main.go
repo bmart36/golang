@@ -1,10 +1,9 @@
 package main
 
 import (
-	"net/http"
 	"io"
+	"net/http"
 )
-
 
 type hotdog int
 
