@@ -23,4 +23,7 @@ func main() {
 
 	// Print out the value stored in "y"
 	fmt.Println(y)
+
+	// Print out the type of "y"
+	fmt.Printf("%T\n", x)
 }
