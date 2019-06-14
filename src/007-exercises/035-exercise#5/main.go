@@ -3,5 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello")
+	// Create variable of type string using raw string literal
+	x := `Hello
+	world
+	"This is
+	a raw string"`
+	fmt.Println(x)
 }
