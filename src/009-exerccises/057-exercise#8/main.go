@@ -5,10 +5,10 @@ import "fmt"
 func main() {
 	// Use a switch statement with no switch expression specified
 	switch {
-	case (2 == 4):
+	case false:
 		fmt.Println("This shouldn't print")
 
-	case (2 == 2):
+	case true:
 		fmt.Println("This should print")
 	}
 }

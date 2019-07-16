@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-// Create TYPED and UNTYPED constants
-const (
-	x int = 42
-	y     = 42
-)
+// write down what the statements below print
 
 func main() {
-	fmt.Println(x, y)
+	fmt.Println(true && true)  // true
+	fmt.Println(true && false) // false
+	fmt.Println(true || true)  // true
+	fmt.Println(true || false) // true
+	fmt.Println(!true)         // false
 }

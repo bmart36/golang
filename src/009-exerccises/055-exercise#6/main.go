@@ -6,9 +6,7 @@ import "fmt"
 func main() {
 	x := 5
 	y := 9
-	if x > y {
+	if x < y {
 		fmt.Println("x is bigger than y")
-	} else {
-		fmt.Println("x is smaller than y")
 	}
 }
