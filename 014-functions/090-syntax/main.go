@@ -29,7 +29,7 @@ func woo(st string) string {
 	return fmt.Sprint("Hello from woo, ", st)
 }
 
-// Multiple returnß
+// Multiple returns
 func mouse(fn, ln string) (string, bool) {
 	a := fmt.Sprint(fn, " ", ln, `, says "Hello"`)
 	b := true
